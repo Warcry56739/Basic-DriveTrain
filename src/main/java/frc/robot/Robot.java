@@ -36,7 +36,7 @@ public class Robot extends TimedRobot {
   
   //Right Side Motor Controllers
   private final CANSparkMax m_rightlead = new CANSparkMax(rightID1, MotorType.kBrushless);
-  private final CANSparkMax m_rightfollow = new CANSparkMax(rightID2, MotorType.kBrushless;
+  private final CANSparkMax m_rightfollow = new CANSparkMax(rightID2, MotorType.kBrushless);
 
   private final DifferentialDrive m_robotDrive = new DifferentialDrive(m_leftlead, m_rightlead);
   private final Joystick m_stick = new Joystick(0);
