@@ -24,14 +24,27 @@ import com.revrobotics.CANSparkMaxLowLevel.MotorType;
  * arcade steering.
  */
 public class Robot extends TimedRobot {
-  //private final PWMSparkMax m_leftMotor = new PWMSparkMax(0);
-  //private final PWMSparkMax m_rightMotor = new PWMSparkMax(1);
-  private final CANSparkMax m_leftMotor1;
-  private final CANSparkMax m_leftMotor2;
-  private final CANSparkMax m_rightMotor1;
-  private final CANSparkMax m_rightMotor2;
-  private final DifferentialDrive m_robotDrive = new DifferentialDrive(m_leftMotor, m_rightMotor);
+
+  //Motor Controller CAN Ids
+  public static final int leftID1 = 1;
+  public static final int leftID2 = 2;
+  public static final int rightID1 = 3;
+  public static final int rightID2 = 4;
+  
+  //Left Side Motor Controllers
+  private final CANSparkMax m_leftlead = new CANSparkMax(leftID1, MotorType.kBrushless);  
+  private final CANSparkMax m_leftfollow = new CANSparkMax(leftID2, MotorType.kBrushless);
+  
+  //Right Side Motor Controllers
+  private final CANSparkMax m_rightlead = new CANSparkMax(rightID1, MotorType.kBrushless);
+  private final CANSparkMax m_rightfollow = new CANSparkMax(rightID2, MotorType.kBrushless;
+
+  private final DifferentialDrive m_robotDrive = new DifferentialDrive(m_leftlead, m_rightlead);
   private final Joystick m_stick = new Joystick(0);
+
+  @Override
+  public void robotInit() {
+  }
 
   @Override
   public void teleopPeriodic() {
