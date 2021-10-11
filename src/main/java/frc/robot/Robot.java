@@ -9,8 +9,6 @@
 // Open Source Software; you can modify and/or share it under the terms of
 // the WPILib BSD license file in the root directory of this project.
 
-//boop boop testing testing
-
 package frc.robot;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -27,7 +25,7 @@ import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 public class Robot extends TimedRobot {
 
   //Motor Controller CAN Ids
-  public static final int leftID1 = 0;
+  public static final int leftID1 = 6;
   public static final int leftID2 = 1;
   public static final int rightID1 = 2;
   public static final int rightID2 = 3;
