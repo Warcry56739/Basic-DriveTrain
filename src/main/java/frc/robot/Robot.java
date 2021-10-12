@@ -25,7 +25,7 @@ import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 public class Robot extends TimedRobot {
 
   //Motor Controller CAN Ids
-  public static final int leftID1 = 6;
+  public static final int leftID1 = 0;
   public static final int leftID2 = 1;
   public static final int rightID1 = 2;
   public static final int rightID2 = 3;
@@ -35,6 +35,7 @@ public class Robot extends TimedRobot {
   private final CANSparkMax m_leftfollow = new CANSparkMax(leftID2, MotorType.kBrushless);
   
   //Right Side Motor Controllers
+  
   private final CANSparkMax m_rightlead = new CANSparkMax(rightID1, MotorType.kBrushless);
   private final CANSparkMax m_rightfollow = new CANSparkMax(rightID2, MotorType.kBrushless);
 
