@@ -44,10 +44,10 @@ public class Robot extends TimedRobot {
    */ 
 
   // private  final CANSparkMax motorcntrl_name = new CANSparkMax(cntrlID, MotorType.kBrushless);  
-  private final CANSparkMax m_left1 = new CANSparkMax(0, MotorType.kBrushless);
-  private final CANSparkMax m_left2= new CANSparkMax(1, MotorType.kBrushless);
-  private final CANSparkMax m_right1= new CANSparkMax(2, MotorType.kBrushless);
-  private final CANSparkMax m_right2= new CANSparkMax(3,MotorType.kBrushless);
+  private final CANSparkMax m_left1 = new CANSparkMax(1, MotorType.kBrushless);
+  private final CANSparkMax m_left2= new CANSparkMax(2, MotorType.kBrushless);
+  private final CANSparkMax m_right1= new CANSparkMax(3, MotorType.kBrushless);
+  private final CANSparkMax m_right2= new CANSparkMax(4,MotorType.kBrushless);
   
   /*Initialize your drivetrain here
   * private final DifferentialDrive name = new DifferentialDrive( left , right );
